@@ -21,7 +21,6 @@ int main() {
             count++;
             sum += arr[i];
             
-            // Обновляем минимум и максимум
             if (arr[i] < min) {
                 min = arr[i];
             }
@@ -31,22 +30,6 @@ int main() {
         }
     }
     
-/*   // Проходим по всем элементам массива
-    for (int i = 0; i < size; i++) {
-        // Проверяем, что элемент чётный и положительный
-        if (arr[i] > 0 && arr[i] % 2 == 0) {
-            count++;
-            sum += arr[i];
-            
-            // Обновляем минимум и максимум
-            if (arr[i] < min) {
-                min = arr[i];
-            }
-            if (arr[i] > max) {
-                max = arr[i];
-            }
-        }
-    }*/
     if (count > 0) {
         average = (double)sum / count;
     } else {
@@ -55,7 +38,6 @@ int main() {
         average = 0.0;
     }
     
-    // Выводим результаты
     if (count > 0) {
         printf("Минимальное значение: %d\n", min);
         printf("Максимальное значение: %d\n", max);
